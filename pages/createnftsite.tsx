@@ -113,7 +113,7 @@ const CreateSite = () => {
         >
           <Text size={"xl"}>Link NFT Drop:</Text>
           <Text mt={"xs"} size={"xl"}>
-            {link}
+            https://easysolsite.vercel.app/{link}
           </Text>
 
           <Center>
