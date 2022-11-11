@@ -32,6 +32,7 @@ const Deploytoken = () => {
       description: "",
       supply: "",
       key: "",
+      image: "",
     },
     validate: {
       description: (v) => (v !== "" ? null : "Description is required!"),
@@ -51,6 +52,7 @@ const Deploytoken = () => {
         description: form.values.description,
         name: form.values.name,
         initialSupply: form.values.supply,
+        image: form.values.image,
       };
 
       sdk.deployer
@@ -134,6 +136,11 @@ const Deploytoken = () => {
               {...form.getInputProps("symbol")}
               label="Symbol"
               placeholder="Enter token symbol e.g. SOL"
+            />
+            <TextInput
+              {...form.getInputProps("image")}
+              label="Token Profile"
+              placeholder="Enter token image link"
             />
             <TextInput
               {...form.getInputProps("name")}
